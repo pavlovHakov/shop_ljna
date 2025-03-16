@@ -28,6 +28,10 @@ ul {
   left: 0;
 }
 
+.hide-load {
+  opacity: 0;
+}
+
 .wrapper {
   width: 100%;
   height: auto;
@@ -413,7 +417,8 @@ a.card-menu.active-card:hover {
   cursor: pointer;
   z-index: 10;
 }
-.up-button:hover{
+
+.up-button:hover {
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
@@ -444,9 +449,10 @@ a.card-menu.active-card:hover {
 
 .card-content {
   width: 24.7%;
-  min-width: 293px;
+  aspect-ratio: 2/3;
   height: auto;
   background-color: #fff;
+  border: 1px solid #bcb7b7;
   margin-bottom: 0.3%;
   position: relative;
 }
@@ -460,9 +466,9 @@ a.card-menu.active-card:hover {
   -webkit-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.28);
   box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.28);
   -webkit-transform: scale(1.01);
+  transform: scale(1.01);
 }
 
-.card-content:hover img {}
 
 .card-content-info {
   width: 98%;
@@ -540,6 +546,13 @@ a.card-menu.active-card:hover {
   max-width: 100%;
   height: auto;
 }
+
+@media screen and (max-width: 1248px) {
+  .card-content {
+    width: 33%;
+  }
+}
+
 
 @media screen and (max-width: 1216px) {
   .content {
