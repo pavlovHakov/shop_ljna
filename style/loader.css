@@ -28,9 +28,3 @@
   animation: l3 1s infinite linear;
 }
 @keyframes l3 {to{transform: rotate(1turn)}}
-
-@media screen and (max-width: 948px) {
-  .card-content {
-    width: 49.7%;
-  }
-}

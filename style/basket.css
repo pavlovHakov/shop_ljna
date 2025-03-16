@@ -431,10 +431,15 @@
     margin-top: -27px;
   }
 }
-
 @media screen and (max-width: 596px) {
   .block-coments-stil {
     display: none;
+  }
+}
+
+@media screen and (max-width: 609px) {
+  .card-content {
+    width: 100%;
   }
 }
 
