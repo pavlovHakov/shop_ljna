@@ -37,6 +37,7 @@ ul {
   height: auto;
   position: relative;
   padding: clamp(3.4375rem, 0.801rem + 4.5409vw, 6.25rem) clamp(0rem, -0.9234rem + 3.0091vw, 2.6875rem) 50px;
+  background: #fff;
 }
 
 .empty {

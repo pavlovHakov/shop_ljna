@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-let hellopreloader = document.querySelector(".mask");;
+
+let hellopreloader = document.querySelector(".mask");
+
 function fadeOutnojquery(el) {
   el.style.opacity = 1;
   let interhellopreloader = setInterval(function () {
@@ -15,4 +17,4 @@ window.onload = function () {
     fadeOutnojquery(hellopreloader);
   }, 1000);
 };
-  });
+});
