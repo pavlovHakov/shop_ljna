@@ -130,11 +130,14 @@
   margin-bottom: 7px;
 
 }
-
-.article-color {
+.description-ul li.article-color {
   color: red;
   font-weight: 600;
 }
+/* .article-color {
+  color: red;
+  font-weight: 600;
+} */
 
 .description-ul-title {
   font-size: 14px;
