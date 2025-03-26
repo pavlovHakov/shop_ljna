@@ -68,6 +68,13 @@
 }
 
 /* contant */
+.desktop-block-description {
+  display: none;
+}
+
+.mobile-block-description {
+  display: none;
+}
 
 .block-description {
   width: 30%;
@@ -124,8 +131,14 @@
 
 }
 
+.article-color {
+  color: red;
+  font-weight: 600;
+}
+
 .description-ul-title {
   font-size: 14px;
+  color: var(--color-body);
   letter-spacing: 0.5px;
   font-weight: 600;
   line-height: clamp(0rem, -1.5505rem + 2.3337vw, 1.25rem);
@@ -146,17 +159,16 @@
   flex-direction: column;
 }
 
-.img-presents,
-.video-presents {
+/* .img-presents {
   width: 100%;
   height: auto;
   -o-object-fit: contain;
   object-fit: contain;
 }
 
-.video-presents {
+.img-presents {
   margin-bottom: -10px;
-}
+} */
 
 /* block-purhases */
 
@@ -384,7 +396,7 @@
   height: 13px;
 }
 
-.wrapper-basket-photos, .mobile-wrapper-basket-photos {
+.wrapper-basket-photos {
   width: 100%;
   height: auto;
   display: flex;
@@ -392,12 +404,9 @@
   flex-wrap: wrap;
   gap: clamp(0.0625rem, -0.0628rem + 0.2606vw, 0.25rem);
 }
-.mobile-wrapper-basket-photos{
-  display: none;
-}
 
 .item-basket-img {
-  width: 12.5%;
+  width: 100%;
   height: auto;
 }
 
@@ -449,11 +458,7 @@
   }
 
   .block-purchases {
-    margin-top: 60px;
-  }
-
-  .mobile-block-description {
-    display: block;
+    margin-top: 41px;
   }
 
   .block-coments-stil {
@@ -470,12 +475,21 @@
   }
 
   .item-basket-img {
-    width: 16.5%;
+    width: 100%;
   }
 
-  .wrapper-basket-photos {
-    justify-content: left;
-    display: flex;
+  .desktop-block-description {
+    display: block;
+    margin-bottom: 53px;
+  }
+
+  .desktop-block-description h1 {
+    margin-bottom: 46px;
+  }
+
+
+  .desktop-block-description .description-ul li {
+    margin-bottom: 14px;
   }
 }
 
@@ -491,11 +505,6 @@
   }
 }
 
-@media screen and (max-width: 588px) {
-  .block-purchases {
-    padding-top: 0;
-  }
-}
 
 @media screen and (max-width: 491px) {
   .block-purchases {
@@ -512,11 +521,20 @@
 }
 
 @media screen and (max-width: 445px) {
-  .wrapper-basket-photos {
+
+  /* .wrapper-basket-photos {
     display: none;
   }
   .mobile-wrapper-basket-photos {
     display: block;
+  } */
+  .mobile-block-description {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .mobile-block-description h1 {
+    padding-left: clamp(0.6875rem, 0.0579rem + 2.0351vw, 2.5rem);
   }
 
   .cnp-menu {
