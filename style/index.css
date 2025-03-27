@@ -223,6 +223,8 @@ ul {
 
 /* ///// */
 .block-logo {
+  width: auto;
+  height: auto;
   padding: 15px 0 15px 24px;
   text-align: center;
   text-decoration: none;
@@ -457,7 +459,6 @@ a.card-menu.active-card:hover {
 .card-content {
   width: 24.7%;
   aspect-ratio: 2/3;
-  height: auto;
   background-color: #fff;
   border: 1px solid #bcb7b7;
   margin-bottom: 0.3%;
